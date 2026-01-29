@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                 url: 'https://github.com/SrikanthRaj007/Jenkin_Automation_Docker.git'
             }
         }
