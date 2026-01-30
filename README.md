@@ -62,31 +62,8 @@ cd Jenkin_Automation_Docker
 bash```
 
 
-### 🔹 Step 3: Run Jenkins Using Docker
-
-If Jenkins already exists:
-
-docker start jenkins
-
-If Jenkins is not created:
-
-docker run -d \
-  --name jenkins \
-  -p 8080:8080 \
-  -p 50000:50000 \
-  -v jenkins_home:/var/jenkins_home \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  --restart unless-stopped \
-  jenkins/jenkins:lts
-
-###🔹 Step 4: Open Jenkins Dashboard
-
-Open browser and go to:
-
-http://localhost:8080
 
 
-Login using Jenkins credentials.
 
 
 
