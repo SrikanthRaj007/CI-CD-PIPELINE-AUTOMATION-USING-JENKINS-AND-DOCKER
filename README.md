@@ -28,3 +28,66 @@ The Jenkins pipeline automatically builds a Docker image and runs a container wh
 
 ## 📂 Project Structure
 
+Jenkin_Automation_Docker/
+│
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── Jenkinsfile
+└── README.md
+---
+
+## ⚙️ CI/CD Workflow
+
+---
+
+## 🧪 COMPLETE PROCEDURE TO RUN THE PROJECT
+
+### 🔹 Step 1: Install Required Software
+
+Ensure the following are installed:
+
+- Docker Desktop (with WSL integration enabled)
+- Git
+- WSL (Ubuntu)
+- Jenkins running inside Docker
+
+---
+
+### 🔹 Step 2: Clone the Repository
+
+```bash
+git clone https://github.com/SrikanthRaj007/Jenkin_Automation_Docker.git
+cd Jenkin_Automation_Docker
+bash```
+
+
+### 🔹 Step 3: Run Jenkins Using Docker
+
+If Jenkins already exists:
+
+docker start jenkins
+
+If Jenkins is not created:
+
+docker run -d \
+  --name jenkins \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  -v jenkins_home:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  --restart unless-stopped \
+  jenkins/jenkins:lts
+
+###🔹 Step 4: Open Jenkins Dashboard
+
+Open browser and go to:
+
+http://localhost:8080
+
+
+Login using Jenkins credentials.
+
+
+
+
