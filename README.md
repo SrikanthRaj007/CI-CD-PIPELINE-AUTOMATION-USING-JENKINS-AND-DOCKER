@@ -1,28 +1,28 @@
 # 🚀 Jenkins Automation with Docker
 
-![Jenkins](https://img.shields.io/badge/Jenkins-Automation-red?logo=jenkins)
-![Docker](https://img.shields.io/badge/Docker-Containerization-blue?logo=docker)
-![CI/CD](https://img.shields.io/badge/CI/CD-Pipeline-success)
+![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-red?logo=jenkins)
+![Docker](https://img.shields.io/badge/Docker-Containers-blue?logo=docker)
 ![Status](https://img.shields.io/badge/Status-Working-brightgreen)
 
-> 🔥 **Automating Docker Image Build and Container Execution using Jenkins Pipeline**
+> 🔥 Automating Docker Image Build and Container Execution using Jenkins Pipeline
 
 ---
 
-## 📌 Project Overview
+## 📌 Project Description
 
-This project demonstrates **CI/CD automation** using **Jenkins and Docker**.  
-The Jenkins pipeline automatically builds a Docker image and runs a container whenever the job is triggered.
+This project demonstrates **CI/CD automation using Jenkins and Docker**.
+The Jenkins pipeline automatically builds a Docker image and runs a container
+without manual intervention.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- 🧩 Jenkins  
-- 🐳 Docker  
-- 🐍 Python (Flask)  
-- 🌐 GitHub  
-- 💻 WSL (Ubuntu)  
+- Jenkins
+- Docker
+- Python (Flask)
+- GitHub
+- WSL (Ubuntu/Linux)
 
 ---
 
@@ -35,36 +35,19 @@ Jenkin_Automation_Docker/
 ├── Dockerfile
 ├── Jenkinsfile
 └── README.md
----
 
-## ⚙️ CI/CD Workflow
-
----
-
-## 🧪 COMPLETE PROCEDURE TO RUN THE PROJECT
-
-### 🔹 Step 1: Install Required Software
-
-Ensure the following are installed:
-
-- Docker Desktop (with WSL integration enabled)
-- Git
-- WSL (Ubuntu)
-- Jenkins running inside Docker
 
 ---
 
-### 🔹 Step 2: Clone the Repository
+## ⚙️ Jenkins Pipeline Workflow
 
-```bash
-git clone https://github.com/SrikanthRaj007/Jenkin_Automation_Docker.git
-cd Jenkin_Automation_Docker
-bash```
-
-
-
-
-
-
-
+GitHub Repository
+↓
+Jenkins Pipeline
+↓
+Docker Image Build
+↓
+Docker Container Run
+↓
+Application Deployment 🚀
 
